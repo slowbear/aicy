@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+  minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientUIController">
+  <AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css">
+    <SplitPane dividerPositions="0.04" orientation="VERTICAL" prefHeight="600.0"
+      prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+        <MenuBar prefHeight="24.575999250000024" prefWidth="798.7199756250008"
+          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <Menu mnemonicParsing="false" text="菜单">
+            <MenuItem fx:id="friendAdder" mnemonicParsing="false" text="添加好友"/>
+          </Menu>
+        </MenuBar>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+        <SplitPane dividerPositions="0.3"
+          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+            <JFXListView fx:id="friendList" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0"/>
+          </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+            <SplitPane dividerPositions="0.7" layoutX="154.0" layoutY="193.0"
+              orientation="VERTICAL" prefHeight="573.695982492188"
+              prefWidth="558.335982960938" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0"
+                prefWidth="160.0">
+                <JFXListView fx:id="chatBoard"
+                  prefHeight="400.1279877890629"
+                  prefWidth="556.799983007813"
+                  AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0"
+                  AnchorPane.topAnchor="0.0"/>
+              </AnchorPane>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0"
+                prefWidth="160.0">
+                <SplitPane dividerPositions="0.85" layoutX="52.0"
+                  layoutY="22.0"
+                  orientation="VERTICAL"
+                  prefHeight="172.03199475000017"
+                  prefWidth="556.799983007813"
+                  AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0"
+                  AnchorPane.topAnchor="0.0">
+                  <AnchorPane minHeight="0.0" minWidth="0.0"
+                    prefHeight="100.0"
+                    prefWidth="160.0">
+                    <JFXTextArea fx:id="inputArea"
+                      layoutX="-15.0"
+                      layoutY="14.0"
+                      prefHeight="144.38399559375014"
+                      prefWidth="554.4959830781255"
+                      AnchorPane.bottomAnchor="0.0"
+                      AnchorPane.leftAnchor="0.0"
+                      AnchorPane.rightAnchor="0.0"
+                      AnchorPane.topAnchor="0.0"/>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0"
+                    prefHeight="100.0"
+                    prefWidth="160.0">
+                    <SplitPane dividerPositions="0.9"
+                      prefHeight="25.343999226562524"
+                      prefWidth="555.263983054688"
+                      AnchorPane.bottomAnchor="0.0"
+                      AnchorPane.leftAnchor="0.0"
+                      AnchorPane.rightAnchor="0.0"
+                      AnchorPane.topAnchor="0.0">
+                      <AnchorPane minHeight="0.0"
+                        minWidth="0.0"
+                        prefHeight="160.0"
+                        prefWidth="100.0"/>
+                      <AnchorPane minHeight="0.0"
+                        minWidth="0.0"
+                        prefHeight="160.0"
+                        prefWidth="100.0">
+                        <children>
+                          <JFXButton fx:id="sendButton"
+                            prefHeight="24.575999250000024"
+                            prefWidth="110.5919966250001"
+                            text="发送"
+                            AnchorPane.bottomAnchor="0.0"
+                            AnchorPane.leftAnchor="0.0"
+                            AnchorPane.rightAnchor="0.0"
+                            AnchorPane.topAnchor="0.0"/>
+                        </children>
+                      </AnchorPane>
+                    </SplitPane>
+                  </AnchorPane>
+                </SplitPane>
+              </AnchorPane>
+            </SplitPane>
+          </AnchorPane>
+        </SplitPane>
+      </AnchorPane>
+    </SplitPane>
+  </AnchorPane>
+</StackPane>

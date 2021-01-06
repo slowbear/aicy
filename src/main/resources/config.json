@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "database": "aicy",
+  "port": 5678,
+  "user": "root",
+  "secret": "560982d8ec959e51"
+}
