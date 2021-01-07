@@ -5,8 +5,8 @@ enum MessageKind implements Serializable {
   LoginRequest, // 登陆请求
   FriendRequest, // 好友请求
   Text, // 发送消息
-  ChangeNickname, // 修改昵称
-  DeleteFriend, // 删除好友
+  ChangeNickname, // TODO:修改昵称
+  DeleteFriend, // TODO:删除好友
   QueryStatus, // 查看状态
   ChangeStatus, // 修改状态
   QueryFriendList, // 查询好友列表

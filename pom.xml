@@ -3,15 +3,18 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <!-- 项目属性(组名，版本号等) -->
   <groupId>dev.slow</groupId>
   <artifactId>Aicy</artifactId>
   <version>0.1.0</version>
 
+  <!-- 配置JDK和JRE版本 -->
   <properties>
     <maven.compiler.source>15</maven.compiler.source>
     <maven.compiler.target>15</maven.compiler.target>
   </properties>
 
+  <!-- 配置阿里云Maven镜像 -->
   <repositories>
     <repository>
       <id>alimaven</id>
@@ -26,32 +29,33 @@
     </repository>
   </repositories>
 
+  <!-- 依赖项 -->
   <dependencies>
+    <!-- JavaFX，本项目UI界面使用的框架 -->
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
       <version>15.0.1</version>
     </dependency>
+    <!-- FastJson，阿里巴巴的json解析库，用于解析配置文件 -->
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
       <version>1.2.75</version>
     </dependency>
+    <!-- MongoDB数据库驱动 -->
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
       <version>4.1.1</version>
     </dependency>
+    <!-- 遵循Material的JavaFx组件库 -->
     <dependency>
       <groupId>com.jfoenix</groupId>
       <artifactId>jfoenix</artifactId>
       <version>9.0.10</version>
     </dependency>
-    <dependency>
-      <groupId>org.controlsfx</groupId>
-      <artifactId>controlsfx</artifactId>
-      <version>11.0.3</version>
-    </dependency>
+
   </dependencies>
 
 </project>
